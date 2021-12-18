@@ -8,6 +8,7 @@
 </head>
 <body>
 <%@ include file="../header.jsp" %>
+<br><br>
 	<div class="container my-5">
 		<h3> 게시판 </h3>
 		<p> 질문 게시판 </p>
@@ -30,10 +31,9 @@
 			</thead>
 			<tbody>
 				<tr><td>1</td>
-				<td><a href="boardview.jsp">안녕하세요</a></td>
+				<td><a href="boardview.jsp">닌텐도 소개글</a></td>
 				<td>홍길동</td><td>2021-12-08</td><td>1</td></tr>
 				<tr><td>2</td><td>환불해주세요</td><td>홍길동</td><td>2021-12-09</td><td>2</td></tr>
-				<tr><td>3</td><td>환불해주세요</td><td>홍길동</td><td>2021-12-10</td><td>3</td></tr>
 			</tbody>
 		</table>
 	</div>

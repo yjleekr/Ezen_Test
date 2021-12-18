@@ -8,7 +8,7 @@
 </head>
 <body>
 <%@ include file="../header.jsp" %>
-
+<br><br>
 	<div class="container">
 		<div class="row">
 			<table class="table">
@@ -19,20 +19,18 @@
 				</tr>
 				<tr>
 					<td> 제목 </td>
-					<td colspan="2"> 안녕하세요 </td>
+					<td colspan="2"> 닌텐도 소개글 </td>
 				</tr>
 				<tr>
 					<td style="height: 300px;"> 내용 </td>
-					<td colspan="2"> 자바에서 자식 클래스는 부모 클래스의 private 멤버를 제외한 모든 메소드를 상속받습니다.
-									이렇게 상속받은 메소드는 그대로 사용해도 되고, 필요한 동작을 위해 재정의하여 사용할 수도 있습니다.
-									즉, 메소드 오버라이딩이란 상속받은 부모 클래스의 메소드를 재정의하여 사용하는 것을 의미합니다. </td>
+					<td colspan="2"> 닌텐도 주식회사는 일본의 교토시에 본사를 둔 가전제품·비디오 게임 회사이다.
+									닌텐도는 마리오 시리즈, 젤다의 전설, 포켓몬스터, 동물의 숲, 스플래툰과 같은 널리 알려진 프랜차이즈 게임을 생산했고,
+									전 세계의 비디오 게임 전문 회사 가운데 시가총액이 가장 큰 기업이다.</td>
 				</tr>
 			</table>
 			<br><br>
 			<button> 수정 </button>
 		</div>
 	</div>
-
-<%@ include file="../footer.jsp" %>
 </body>
 </html>

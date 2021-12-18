@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 <!-- css 호출 -->
-<link rel="stylesheet" href="/Ezen_Html/Test/css/main.css">
+<link rel="stylesheet" href="/Ezen_Test/Test/css/main.css">
 </head>
 <body>
 <!-- 부트스트랩 가져오기 Js/j퀘리 -->
@@ -18,7 +18,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <!-- 본인 js 호출 -->
-	<script type="text/javascript" src="/Ezen_Jsp/Test/js/main.js"></script>
+	<script type="text/javascript" src="/Ezen_Test/Test/js/main.js"></script>
 
 <!-- 헤더 시작 -->
 <div class="fixed-top bg-white">
@@ -34,9 +34,9 @@
 			</div>
 			<div class="col-3 d-flex justify-content-end align-items-center">
 				<ul class="nav header-topmamu">
-					<li><a href="/Ezen_Jsp/Test/view/member/login.jsp" class="p-2 mb-1 bg-info text-white"> 로그인 </a>
-					<li><a href="/Ezen_Jsp/Test/view/member/singup.jsp" class="p-2 mb-1 bg-info text-white"> 회원가입 </a>
-					<li><a href="/Ezen_Jsp/Test/view/board/boardlist.jsp" class="p-2 mb-1 bg-info text-white"> 게시판 </a>
+					<li><a href="/Ezen_Test/Test/view/member/login.jsp" class="p-2 mb-1 bg-info text-white"> 로그인 </a>
+					<li><a href="/Ezen_Test/Test/view/member/singup.jsp" class="p-2 mb-1 bg-info text-white"> 회원가입 </a>
+					<li><a href="/Ezen_Test/Test/view/board/boardlist.jsp" class="p-2 mb-1 bg-info text-white"> 게시판 </a>
 				</ul>
 			</div>
 			</div>

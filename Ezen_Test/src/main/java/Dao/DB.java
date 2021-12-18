@@ -11,7 +11,6 @@ public class DB {
 	protected  PreparedStatement ps; // SQL 조작
 	protected  ResultSet rs; // SQL 결과를 연결
 		
-		
 		// 2. 생성자
 		public DB() {
 			try {
