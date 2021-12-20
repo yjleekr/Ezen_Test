@@ -3,8 +3,8 @@
     pageEncoding="UTF-8"%>
 
 <%
-		String title = request.getParameter("title");
-		String contents = request.getParameter("contents");
+	String title = request.getParameter("title");
+	String contents = request.getParameter("contents");
 		
-		Board board = new Board(title, contents);
+	Board board = new Board(title, contents);
 %>

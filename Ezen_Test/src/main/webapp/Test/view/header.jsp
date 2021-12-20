@@ -12,13 +12,14 @@
 <link rel="stylesheet" href="/Ezen_Test/Test/css/main.css">
 </head>
 <body>
-<!-- 부트스트랩 가져오기 Js/j퀘리 -->
+<!-- Jquery  -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- 부트스트랩 가져오기 Js/j쿼리 -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
 <!-- 본인 js 호출 -->
-	<script type="text/javascript" src="/Ezen_Test/Test/js/main.js"></script>
+<script type="text/javascript" src="/Ezen_Test/Test/js/main.js"></script>
 
 <!-- 헤더 시작 -->
 <div class="fixed-top bg-white">
