@@ -38,6 +38,5 @@
       <p class="mb-1">&copy; 2021</p>
     </footer>
   </div>
-</div>
 </body>
 </html>

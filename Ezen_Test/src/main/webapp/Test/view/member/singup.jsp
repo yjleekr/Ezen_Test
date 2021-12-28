@@ -8,6 +8,14 @@
 </head>
 <body>
 <%@ include file="../header.jsp" %>
+
+<%
+	if(session.getAttribute("loginid")!=null){
+		out.print("<script>alert('로그인이 되어 있습니다.'); </script>");
+		out.println("<script>location.href='../main.jsp';</script>");
+	}
+%>
+
 <div class="container">
     <div class="input-form-backgroud row">
       <div class="input-form col-md-12 mx-auto">
@@ -40,23 +48,25 @@
 
           <div class="mb-3">
             <label for="address">주소</label>
-            <input type="text" class="form-control" id="address" placeholder="서울특별시 강남구" required>
-            <div class="invalid-feedback">
-              주소를 입력해주세요.
-            </div>
+          <div class="row">
+			<div class="col-md-6"> <input type="text" name="address1" id="sample4_postcode" placeholder="우편번호" class="form-control"> </div>
+			<div class="col-md-6"> <input type="button" onclick="sample4_execDaumPostcode();" value="우편번호 찾기" class="form-control"><br></div>
+		</div>
           </div>
 
           <div class="mb-3">
-            <label for="address2">상세주소<span class="text-muted">&nbsp;</span></label>
-            <input type="text" class="form-control" id="address2" placeholder="상세주소를 입력해주세요.">
+            <div class="row">
+				<div class="col-md-6"> <input type="text" name="address2" id="sample4_roadAddress" placeholder="도로명주소" class="form-control"> </div>
+				<div class="col-md-6"> <input type="text" name="address3" id="sample4_jibunAddress" placeholder="지번주소" class="form-control"> </div>
+			</div>
+			<input type="text" id="sample4_detailAddress" name="address4" placeholder="상세주소" class="form-control">
           </div>
 
           <div class="row">
             <div class="col-md-8 mb-3">
               <label for="root">가입 경로</label>
               <select class="custom-select d-block w-100" id="root">
-                <option value=""></option>
-                <option>검색</option>
+                <option value="">검색</option>
                 <option>카페</option>
               </select>
               <div class="invalid-feedback">
