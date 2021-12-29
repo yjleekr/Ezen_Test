@@ -56,6 +56,79 @@ function sample4_execDaumPostcode() {
     }
 /* 다음주소 api end */
 
+// 회원가입
+/*function singup(){
+	var id = document.getElementById("id").value;
+	var password = document.getElementById("password").value;
+	var email = document.getElementById("email").value;
+	var address = document.getElementById("address");
+	var phone = document.getElementById("phone").value;
+	var name = document.getElementById("name").value;
+	
+	$.ajax({
+		url:"/Ezen_Test/Test/controller/signupcontroller.jsp",
+		data:{id:id, password:password, email:email, address:address, phone:phone, name:name},
+		success: function(result){
+			if(result==1){
+			location.href="../view/member/login.jsp";
+			} else {
+				alert("회원가입 실패");
+				location.href="../view/member/login.jsp";
+				}	
+		}
+	});
+}*/
+
+// 로그인
+/*function login(){
+	
+	alert("로그인 0");
+	var id = document.getElementById("m_id").value;
+	var password = document.getElementById("m_password").value;
+	
+	$.ajax({
+		url:"/Ezen_Test/Test/controller/logincontroller.jsp",
+		data:{id:id, password:password},
+		success : function(result){
+			if(result==1) {
+				alert("로그인 1");
+				location.href="/Ezen_Test/Test/view/main.jsp";
+			} else {
+				alert("로그인 2");
+				location.href="/Ezen_Test/Test/view/member/login.jsp";
+			}
+		}
+	});
+}*/
+
+function singupcheck(){
+	var id=document.getElementById("id").value;
+	var password=document.getElementById("password").value;
+	
+	var idj=/^[a-z0-9]{5,10}$/; // 아이디 정규 표현식
+	var pwj=/^[A-Za-z0-9]{5,10}$/; // 비밀번호 정수 표시
+	
+	if(!idj.test(id)){
+		document.getElementById("idresult").innerHTML="아이디는 소문자의 숫자 조합 5~15사이만 가능합니다.";
+		document.getElementById("idresult").style.color="red";
+		return false; // form submit 불가
+	} else {
+		document.getElementById("idresult").innerHTML="사용가능한 아이디 입니다.";
+		document.getElementById("idresult").style.color="green";
+		}
+	if(!pwj.test(password)){
+		document.getElementById("pwresult").innerHTML="비밀번호는 소문자의 숫자 조합 5~15사이만 가능합니다.";
+		document.getElementById("pwresult").style.color="red";
+		return false; // form submit 불가
+	} else {
+		document.getElementById("pwresult").innerHTML="사용가능한 비밀번호 입니다.";
+		document.getElementById("pwresult").style.color="green";
+		}
+		
+		
+}
+
+// 글 등록
 function boardwrite(){
 	alert("글을 작성합니다.");
 	

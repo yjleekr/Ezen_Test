@@ -12,25 +12,25 @@
     <div class="input-form-backgroud row">
       <div class="input-form col-md- mx-auto">
         <h4 class="mb-3">로그인</h4>
-        <form class="validation-form">
+        <form class="validation-form" action="/Ezen_Test/Test/controller/logincontroller.jsp" method="post">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name">아이디</label>
-              <input type="text" class="form-control" id="name">
+              <input type="text" class="form-control" id="m_id" name="m_id">
               <div class="invalid-feedback">
                 아이디를 입력해주세요.
               </div>
             </div>
             <div class="col-md-6 mb-3">
               <label for="nickname">비밀번호</label>
-              <input type="text" class="form-control" id="nickname">
+              <input type="text" class="form-control" id="m_password" name="m_password">
               <div class="invalid-feedback">
                 비밀번호를 입력해주세요.
               </div>
             </div>
           </div>
           <div class="mb-4"></div>
-          <button class="btn btn-primary btn-lg btn-block" type="submit">가입 완료</button>
+          <input type="submit" class="btn btn-primary btn-lg btn-block" value="로그인">
         </form>
       </div>
     </div>
