@@ -20,21 +20,23 @@
     <div class="input-form-backgroud row">
       <div class="input-form col-md-12 mx-auto">
         <h4 class="mb-3">회원가입</h4>
-        <form class="validation-form" action="../../controller/signupcontroller.jsp" method="post" onsubmit="return signupcheck();">
+        <form class="validation-form" action="/Ezen_Test/Test/controller/signupcontroller.jsp" method="post" onsubmit="return signupcheck();" enctype="application/x-www-form-urlencoded">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name">아이디</label>
               <input type="text" class="form-control" id="id" name="id" onchange="signupcheck();">
             </div>
-            
+             <div>
+				<span id="idresult"></span>
+    		</div>
             <div class="col-md-6 mb-3">
               <label for="password">비밀번호</label>
               <input type="password" class="form-control" id="password" name="password" onchange="signupcheck();">
             </div>
           </div>
           <div>
-            	<span id="pwresult"></span>
-            </div>
+          	<span id="pwresult"></span>
+          </div>
 
           <div class="mb-3">
             <label for="email">이메일</label>
@@ -61,13 +63,11 @@
             <div class="col-md-8 mb-3">
               <label for="root">연락처</label></div>
               <div class="col-md-6">
-              <input id="phone" onchange="singupcheck();" type="text" name="phone" class="form-control" placeholder="000-000-0000">
+              <input id="phone" onchange="singupcheck();" type="text" name="phone" class="form-control" placeholder="010-000-0000">
           </div>
-            
-            
             <div class="col-md-4 mb-4">
               <label for="code">이름</label>
-              <input type="text" class="form-control" id="code" placeholder="" required>
+              <input type="text" name="name" class="form-control" id="code">
             </div>
           </div>
           <div class="mb-4"></div>
@@ -75,9 +75,7 @@
         </form>
       </div>
     </div>
-    <div>
-            	<span id="idresult"></span>
-            </div>
+  
     <footer class="my-3 text-center text-small">
       <p class="mb-1">&copy; 2021.</p>
     </footer>
