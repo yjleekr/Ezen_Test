@@ -10,8 +10,7 @@ public static MemberDao getmemberDao() {return memberDao;}
 // 회원가입
 public boolean singup(Member member) {
 	
-	String sql = "insert into member(m_id, m_password, m_email,"
-			+ "m_address, m_phone, m_name) values(?,?,?,?,?,?)";
+	String sql = "insert into member(m_id, m_password, m_email," + "m_address, m_phone, m_name) values(?,?,?,?,?,?)";
 	try {
 		preparedStatement=connection.prepareStatement(sql);
 		preparedStatement.setString(1, member.getM_id());
@@ -28,8 +27,7 @@ public boolean singup(Member member) {
 
 // 로그인 성공 실패
 public boolean login(String id, String password) {
-	String sql="select * from member where m_id=?"
-			+ "and m_password=?";
+	String sql="select * from member where m_id=?" + "and m_password=?";
 	try {
 		preparedStatement=connection.prepareStatement(sql);
 		preparedStatement.setString(1, id);

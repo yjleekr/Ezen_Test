@@ -110,8 +110,7 @@ function singupcheck(){
 	var pwj=/^[A-Za-z0-9]{5,10}$/; // 비밀번호 정수 표시
 	
 	if(!idj.test(id)){
-		document.getElementById("idresult").innerHTML=
-		"아이디는 소문자의 숫자 조합 5~15사이만 가능합니다.";
+		document.getElementById("idresult").innerHTML="아이디는 소문자의 숫자 조합 5~15사이만 가능합니다.";
 		document.getElementById("idresult").style.color="red";
 		return false; // form submit 불가
 	} else {
@@ -119,8 +118,7 @@ function singupcheck(){
 		document.getElementById("idresult").style.color="green";
 		}
 	if(!pwj.test(password)){
-		document.getElementById("pwresult").innerHTML=
-		"비밀번호는 소문자의 숫자 조합 5~15사이만 가능합니다.";
+		document.getElementById("pwresult").innerHTML="비밀번호는 소문자의 숫자 조합 5~15사이만 가능합니다.";
 		document.getElementById("pwresult").style.color="red";
 		return false; // form submit 불가
 	} else {
