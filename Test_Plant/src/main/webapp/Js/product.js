@@ -3,7 +3,7 @@ function product(){
 	var pfwork=document.getElementById("productform").fwork.value;
 	var pftime=document.getElementById("productform").ftime.value;
 	
-	// 라디오 체크 유효성 검사
+// 라디오 체크 유효성 검사
 	// 재료준비
 	var ready = document.getElementsByName('ready'); // 배열로 동일한 라디오 2개 가져오기
 	var check = false; // 체크여부 확인
@@ -64,7 +64,7 @@ function product(){
 	}
 	if(check==false) {alert("포장 공정 체크 해주세요"); return false;}
 
-	// 최종작업일자, 최종작업시간 유효성 검사
+// 최종작업일자, 최종작업시간 유효성 검사
 	if(pfwork=="") {
 		alert("최종 작업 일자를 입력해주세요");
 		document.getElementById("productform").pfwork.focurs();
