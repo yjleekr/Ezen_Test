@@ -8,13 +8,13 @@ private String coating; // 코팅 공정
 private String paper; // 합지 공정
 private String join; // 접합 공정
 private String packaging; // 포장 공정
-private int fwork; // 최종 작업 일자
-private int ftime; // 최종 작업 시간
+private String fwork; // 최종 작업 일자
+private String ftime; // 최종 작업 시간
 
 public ProductDto() { }
 
 public ProductDto(int no, String ready, String print, String coating, String paper, String join, String packaging,
-		int fwork, int ftime) {
+		String fwork, String ftime) {
 	super();
 	this.no = no;
 	this.ready = ready;
@@ -83,19 +83,21 @@ public void setPackaging(String packaging) {
 	this.packaging = packaging;
 }
 
-public int getFwork() {
+public String getFwork() {
 	return fwork;
 }
 
-public void setFwork(int fwork) {
+public void setFwork(String fwork) {
 	this.fwork = fwork;
 }
 
-public int getFtime() {
+public String getFtime() {
 	return ftime;
 }
 
-public void setFtime(int ftime) {
+public void setFtime(String ftime) {
 	this.ftime = ftime;
 }
+
+
 }

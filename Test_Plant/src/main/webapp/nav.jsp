@@ -15,17 +15,18 @@ a{color: white;}
 .li{
 	display: inline;
 	margin-left: 20px;
+	color: white;
 }
 
 </style>
 </head>
 <body>
 <ul id="ul">
-	<li class="li"><a href="#">제품조회</a></li>
-	<li class="li"><a href="#">작업지시서조회</a></li>
+	<li class="li">제품조회</li>
+	<li class="li">작업지시서조회</li>
 	<li class="li"><a href="/Test_Plant/Product/productwrite.jsp">작업공정등록</a></li>
-	<li class="li"><a href="#">작업공정조회</a></li>
-	<li class="li"><a href="#">홈으로</a></li>
+	<li class="li"><a href="/Test_Plant/Product/productlist.jsp">작업공정조회</a></li>
+	<li class="li">홈으로</li>
 </ul>
 </body>
 </html>
