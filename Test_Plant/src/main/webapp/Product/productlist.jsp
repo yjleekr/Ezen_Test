@@ -89,7 +89,8 @@ td{padding: 10px;}
 							<td>-</td>
 						<% } %>
 						
-						<td><%=productDto.getFwork() %></td><td><%=productDto.getFtime() %></td>
+						<td><%=productDto.getFwork() %></td>
+						<td><%=productDto.getFtime() %></td>
 					</tr>
 				<% } %>
 			</table>
