@@ -90,8 +90,8 @@ td{padding: 10px;}
 						<% } %>
 						
 						<td><%=productDto.getFwork() %></td>
-						<td><%=productDto.getFtime() %></td>
-					</tr>
+						<% StringBuffer ftime = new StringBuffer(productDto.getFtime()); %>
+						<td><%=ftime.insert(2, ":") %></td>
 				<% } %>
 			</table>
 		</div>

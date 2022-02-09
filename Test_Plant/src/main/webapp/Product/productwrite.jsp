@@ -32,7 +32,7 @@ text-align: center;
 			<h3>작업공정등록</h3>
 		</div>
 		<div>
-			<form id="productform" action="../Controller/PwriteController.jsp" method="post">
+			<form id="productform" action="../Controller/PwriteController.jsp" method="post" onsubmit="return product();">
 				<table>
 					<tr>
 						<td id="tdid">작업지시번호</td>
@@ -98,7 +98,7 @@ text-align: center;
 					</tr>
 					
 					<tr>
-						<td><input type="submit" value="공정등록" onclick="product();"></td>
+						<td><input type="submit" value="공정등록"></td>
 						<td><input type="submit" value="공정수정"></td>
 						<td><input type="submit" value="다시쓰기"></td>
 					</tr>
