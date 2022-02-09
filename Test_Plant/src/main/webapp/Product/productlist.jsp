@@ -45,47 +45,47 @@ td{padding: 10px;}
 				<% for(ProductDto productDto : products) { %>
 					<tr>
 						<td><%=productDto.getNo() %></td>
-						<% if(productDto.getReady().equals("on")) { %>
+						<% if(productDto.getReady().equals("완료")) { %>
 							<td>완료</td>
 						<% } %>
-						<% if(productDto.getReady().equals("")) { %>
+						<% if(productDto.getReady().equals("작업중")) { %>
 							<td>-</td>
 						<% } %>
 						
-						<% if(productDto.getPrint().equals("on")) { %>
+						<% if(productDto.getPrint().equals("완료")) { %>
 							<td>완료</td>
 						<% } %>
-						<% if(productDto.getPrint().equals("")) { %>
+						<% if(productDto.getPrint().equals("작업중")) { %>
 							<td>-</td>
 						<% } %>
 						
-						<% if(productDto.getCoating().equals("on")) { %>
+						<% if(productDto.getCoating().equals("완료")) { %>
 							<td>완료</td>
 						<% } %>
-						<% if(productDto.getCoating().equals("")) { %>
+						<% if(productDto.getCoating().equals("작업중")) { %>
 							<td>-</td>
 						<% } %>
 						
-						<% if(productDto.getPaper().equals("on")) { %>
+						<% if(productDto.getPaper().equals("완료")) { %>
 							<td>완료</td>
 						<% } %>
-						<% if(productDto.getPaper().equals("")) { %>
+						<% if(productDto.getPaper().equals("작업중")) { %>
 							<td>-</td>
 						<% } %>
 						
-						<% if(productDto.getJoin().equals("on")) { %>
+						<% if(productDto.getJoin().equals("완료")) { %>
 							<td>완료</td>
 						<% } %>
 						
-						<% if(productDto.getJoin().equals("")) { %>
+						<% if(productDto.getJoin().equals("작업중")) { %>
 							<td>-</td>
 						<% } %>
 						
-						<% if(productDto.getPackaging().equals("on")) { %>
+						<% if(productDto.getPackaging().equals("완료")) { %>
 							<td>완료</td>
 						<% } %>
 						
-						<% if(productDto.getPackaging().equals("")) { %>
+						<% if(productDto.getPackaging().equals("작업중")) { %>
 							<td>-</td>
 						<% } %>
 						
