@@ -42,48 +42,48 @@ text-align: center;
 					<tr>
 						<td id="tdid">재료준비</td>
 						<td>
-							<input type="radio" id="pready1" name="ready">완료
-							<input type="radio" id="pready2" name="ready">작업중
+							<input type="radio" id="pready" name="ready" value="완료">완료
+							<input type="radio" id="pready" name="ready" value="작업중">작업중
 						</td>
 					</tr>
 					
 					<tr>
 						<td id="tdid">인쇄공정</td>
 						<td>
-							<input type="radio" id="pprint1" name="print">완료
-							<input type="radio" id="pprint2" name="print">작업중
+							<input type="radio" id="pprint" name="print" value="완료">완료
+							<input type="radio" id="pprint" name="print" value="작업중">작업중
 						</td>
 					</tr>
 					
 					<tr>
 						<td id="tdid">코팅공정</td>
 						<td>
-							<input type="radio" id="pcoating1" name="coating">완료
-							<input type="radio" id="pcoating2" name="coating">작업중
+							<input type="radio" id="pcoating" name="coating" value="완료">완료
+							<input type="radio" id="pcoating" name="coating" value="작업중">작업중
 						</td>
 					</tr>
 					
 					<tr>
 						<td id="tdid">합지공정</td>
 						<td>
-							<input type="radio" id="ppaper1" name="paper">완료
-							<input type="radio" id="ppaper2" name="paper">작업중
+							<input type="radio" id="ppaper" name="paper" value="완료">완료
+							<input type="radio" id="ppaper" name="paper" value="작업중">작업중
 						</td>
 					</tr>
 					
 					<tr>
 						<td id="tdid">접합공정</td>
 						<td>
-							<input type="radio" id="pjoin1" name="join">완료
-							<input type="radio" id="pjoin2" name="join">작업중
+							<input type="radio" id="pjoin" name="join" value="완료">완료
+							<input type="radio" id="pjoin" name="join" value="작업중">작업중
 						</td>
 					</tr>
 					
 					<tr>
 						<td id="tdid">포장공정</td>
 						<td>
-							<input type="radio" id="ppackaging1" name="packaging">완료
-							<input type="radio" id="ppackaging2" name="packaging">작업중
+							<input type="radio" id="ppackaging" name="packaging" value="완료">완료
+							<input type="radio" id="ppackaging" name="packaging" value="작업중">작업중
 						</td>
 					</tr>
 					

@@ -12,8 +12,8 @@
 	String paper=request.getParameter("paper");
 	String join=request.getParameter("join");
 	String packaging=request.getParameter("packaging");
-	int fwork=Integer.parseInt(request.getParameter("fwork"));
-	int ftime=Integer.parseInt(request.getParameter("ftime"));
+	String fwork=request.getParameter("fwork");
+	String ftime=request.getParameter("ftime");
 	
 	ProductDto productDto=new ProductDto(no, ready, print, coating, paper, join, packaging, fwork, ftime);
 	boolean productwrite=ProductDao.getProductDao().productwrite(productDto);
